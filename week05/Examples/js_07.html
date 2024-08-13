@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Book Object</title>
+	<meta charset=utf-8>
+	<script>
+		let book = {
+			title: "Let the Right One In",
+			author: "John Ajvide Lindqvist",
+			published: 2005
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Book</h1>
+
+	<script>
+		for (property in book) {
+			document.write(property + ": " + book[property] + "<br>");
+		}
+	</script>
+</body>
+
+</html>

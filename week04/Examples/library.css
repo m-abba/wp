@@ -1,0 +1,20 @@
+.verdana {
+    font-family: verdana;
+    color: blue;
+}
+
+.georgia {
+    font-family: georgia;
+}
+
+.impact {
+    font-family: impact;
+}
+
+.bigger {
+    font-size: 120%;
+}
+
+.smaller {
+    font-size: 85%;
+}

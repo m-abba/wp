@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Array of Images</title>
+	<meta charset=UTF-8>
+	<script>
+		let pics = ["img00.jpg", "img01.jpg", "img02.jpg"];
+	</script>
+</head>
+
+<body>
+	<h1>Pics</h1>
+	<script>
+		for (let i = 0; i < pics.length; i++) {
+			document.write("<img src=images/" + pics[i] + " alt='Image " + i + "'>");
+		}
+	</script>
+</body>
+
+</html>
