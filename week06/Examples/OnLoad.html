@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Onload event</title>
+        <script>
+            window.onload = addContent;
+
+            function addContent() {
+                let theDiv = document.getElementById("test");
+                theDiv.innerHTML = "Have a nice day";
+                theDiv.style = "color:blue";
+
+                var newElement = document.createElement("p");
+                newElement.innerHTML = "This is a new paragraph";
+                newElement.style = "color:red; font-size: 50px";
+                document.body.appendChild(newElement);
+            }
+        </script>
+
+        <!-- <script>
+      window.onload = function () {
+        alert("This page has finished loading");
+      };
+    </script> -->
+        <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    </head>
+
+    <body>
+        <div id="test">Lorem ipsum</div>
+        <div>12345</div>
+
+        <button onclick="greetUser()">Click Me</button>
+        <script>
+            function greetUser() {
+                alert("Hello, User!");
+            }
+        </script>
+    </body>
+</html>

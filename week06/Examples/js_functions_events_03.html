@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Greet</title>
+		<meta charset=utf-8>
+		<style>
+		button {
+			font-size: 200%;
+		}
+	</style>
+		<script>
+		function greet() {
+			/*Use prompt to get name and save to a variable */
+			let name = prompt('What is your name?', 'Type name here');
+			/*Display a greeting including the name variable */
+			alert('Hello ' + name);
+		}
+	</script>
+	</head>
+
+	<body>
+		<h1 onclick="alert('Hello!')">Button with code</h1>
+		<!-- button executes the greet() function when clicked on -->
+		<button onclick="greet()">Greet</button>
+		<!-- <p onmouseover="alert('Mouse over the button!')"> Mouse Over</p> -->
+	</body>
+
+</html>
