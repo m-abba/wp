@@ -1,0 +1,78 @@
+body {
+	font-family: arial, helvetica, sans-serif;
+	width: 700px;
+	margin: auto;
+}
+
+/*display all page*/
+.display {
+	width: 150px;
+	height: 250px;
+	border: solid 1px #000;
+	padding: 20px;
+	margin: 20px;
+	float: left;
+}
+
+.img_size {
+	height: 150px;
+	width: 150px;
+}
+
+/*details page*/
+
+.details {
+	width: 450px;
+	border: solid 1px #000;
+	padding: 20px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+/*user messages*/
+
+.centre_text {
+	text-align: center;
+}
+
+form {
+	width: 500px;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 40px auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 7px;
+}
+
+input[type="submit"] {
+	display: block;
+	margin-top: 20px;
+}
+
+nav {
+	padding-bottom: 20px;
+}
+
+
+.flex-nav {
+	display: flex;
+	justify-content: center;
+	padding: 16px 0px;
+}
+
+.flex-nav li {
+	list-style-type: none;
+	padding: 0px 25px;
+}
+
+.flex-nav a {
+	text-decoration: none;
+	color: #000;
+	font-family: verdana;
+	font-size: 1.2em;
+}
