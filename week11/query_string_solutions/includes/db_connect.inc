@@ -9,12 +9,12 @@ if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
 } else {
     $servername = "talsprddb02.int.its.rmit.edu.au";
     //change to your own student number
-    $username = "s123456";
+    $username = "e121189";
     //change to your own Jacob 5 password
     //NOT your RMIT password
-    $password = "JACOB5-password";
+    $password = "rmit1234";
     //change to your own student number
-    $dbname = "s123456";
+    $dbname = "e121189";
 }
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
