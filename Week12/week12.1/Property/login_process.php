@@ -16,9 +16,6 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     $_SESSION['username'] = $username;
-
-} else {
-    $_SESSION['usrmsg'] = "There was an error with your login";
 }
 
 $conn->close();
