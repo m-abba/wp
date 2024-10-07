@@ -16,9 +16,9 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     $_SESSION['username'] = $username;
-    print ($_SESSION['username']);
+    // print ($_SESSION['username']);
 }
 
-// $conn->close();
-// header("Location: index.php"); // redirect to the index page
-// exit(0);
+$conn->close();
+header("Location: index.php"); // redirect to the index page
+exit(0);
