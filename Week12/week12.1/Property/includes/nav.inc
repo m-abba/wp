@@ -4,8 +4,7 @@
     <?php if (!isset($_SESSION['username'])) { ?>
         <a href=register.php>Register</a>
         <a href=login.php>Login</a>
-    <?php } ?>
-    <?php if (isset($_SESSION['username'])) { ?>
+    <?php } else { ?>
         <a href=new_property.php>New Property</a>
         <a href=logout.php>Logout</a>
     <?php } ?>
