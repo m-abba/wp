@@ -13,7 +13,7 @@ include('includes/nav.inc');
     <label for="password">Password:</label>
     <input type="password" name="password" id="password" required>
     <br>
-    <input type="submit" value="Register">
+    <input type="submit" value="login">
 </form>
 
 <?php

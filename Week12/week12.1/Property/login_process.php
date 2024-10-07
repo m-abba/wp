@@ -3,7 +3,7 @@ $title = "Login Process";
 
 include('includes/db_connect.inc');
 
-$sql = "select * from users where username = ?  and password = SHA(?)";
+$sql = "select * from users where username = ? and password = SHA(?)";
 
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss", $username, $password);

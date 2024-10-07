@@ -1,27 +1,31 @@
 <?php
-function validateInput($str)
-{
-    $ret = trim($str);
-    return $ret;
-}
-$address = validateInput($_POST['address']);
-$rooms = validateInput($_POST['rooms']);
-$rent = validateInput($_POST['rent']);
+session_start();
 
-include('includes/db_connect.inc');
+if (isset($_SESSION['username'])) {
+    function validateInput($str)
+    {
+        $ret = trim($str);
+        return $ret;
+    }
+    $address = validateInput($_POST['address']);
+    $rooms = validateInput($_POST['rooms']);
+    $rent = validateInput($_POST['rent']);
 
-$sql = "INSERT INTO Property (address, rooms, rent) VALUES (?,?,?)";
+    include('includes/db_connect.inc');
 
-$stmt = $conn->prepare($sql);
+    $sql = "INSERT INTO Property (address, rooms, rent) VALUES (?,?,?)";
 
-$stmt->bind_param("ssi", $address, $rooms, $rent);
+    $stmt = $conn->prepare($sql);
 
-$stmt->execute();
+    $stmt->bind_param("ssi", $address, $rooms, $rent);
 
-if ($stmt->affected_rows > 0) {
-    //back to home
-    header("Location:index.php");
-    exit(0);
-} else {
-    echo "An error has occured!";
+    $stmt->execute();
+
+    if ($stmt->affected_rows > 0) {
+        //back to home
+        header("Location:index.php");
+        exit(0);
+    } else {
+        echo "An error has occured!";
+    }
 }

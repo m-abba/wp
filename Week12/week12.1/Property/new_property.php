@@ -7,15 +7,17 @@ include('includes/header.inc');
 include('includes/nav.inc');
 ?>
 <h2>Add New Property</h2>
-<form action="process_new_property.php" method="post">
-    <label for="address">Address</label>
-    <input type="text" name="address" id="address" required><br>
-    <label for="rooms">Rooms</label>
-    <input type="text" name="rooms" id="rooms" required><br>
-    <label for="rent">Rent</label>
-    <input type="text" name="rent" id="rent" required><br>
-    <input type=submit value="Add New Property">
-</form>
-<?php
+<?php if (isset($_SESSION['username'])) { ?>
+    <form action="process_new_property.php" method="post">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" required><br>
+        <label for="rooms">Rooms</label>
+        <input type="text" name="rooms" id="rooms" required><br>
+        <label for="rent">Rent</label>
+        <input type="text" name="rent" id="rent" required><br>
+        <input type=submit value="Add New Property">
+    </form>
+    <?php
+}
 include('includes/footer.inc');
 ?>
