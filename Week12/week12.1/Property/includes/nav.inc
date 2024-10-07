@@ -2,7 +2,7 @@
     <a href=index.php>Home</a>
 
     <?php if (!isset($_SESSION['username'])) { ?>
-        <a href=register.php>Login</a>
+        <a href=register.php>Register</a>
         <a href=login.php>Login</a>
     <?php } ?>
     <?php if (!empty($_SESSION['username'])) { ?>
