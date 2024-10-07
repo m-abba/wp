@@ -1,6 +1,6 @@
 <?php
 $title = "Login Process";
-
+session_start();
 include('includes/db_connect.inc');
 
 $sql = "select * from users where username = ? and password = SHA(?)";
