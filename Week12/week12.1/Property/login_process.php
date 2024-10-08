@@ -1,7 +1,7 @@
 <?php
 $title = "Login Process";
-
 include('includes/db_connect.inc');
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 $sql = "select username, password from users where username = ? and password = SHA(?)";
