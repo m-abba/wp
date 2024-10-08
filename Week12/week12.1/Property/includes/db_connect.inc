@@ -1,9 +1,17 @@
 <?php
-$servername = "talsprddb02.int.its.rmit.edu.au";
-$username = "e121189";
-$password = "rmit1234";
-$dbname = "e121189";
-
+//db_connect.inc
+//Check what server you are accessing
+if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Agent";
+} else {
+    $servername = "talsprddb02.int.its.rmit.edu.au";
+    $username = "e121189";
+    $password = "rmit1234";
+    $dbname = "e121189";
+}
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
